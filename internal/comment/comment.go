@@ -14,6 +14,8 @@ type Comment struct {
 	Author string
 }
 
+//Store - this interface defines all of the methods
+// that our service in order to operate
 type Store interface {
 	GetComment(context.Context, string) (Comment, error)
 }
@@ -21,7 +23,7 @@ type Store interface {
 // service - is the struct on witch all our
 // logic will be built on top of
 type Service struct {
-	Store Store
+	Store Store // alternative *db.Repository
 }
 
 // New Service - returns a pointer to a new
