@@ -27,3 +27,6 @@ go run cmd/server/main.go
 docker build -t go-rest-api .
 
 docker run go-rest-api
+
+
+docker-compose up
