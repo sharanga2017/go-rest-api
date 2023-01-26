@@ -8,6 +8,7 @@ import (
 
 var (
 	ErrorFetchingComment = errors.New("failed to fetchcomment by id")
+	ErrNotImplemented    = errors.New("Not implemented")
 )
 
 // comment structure for our
@@ -47,4 +48,14 @@ func (s *Service) GetComment(ctx context.Context, id string) (Comment, error) {
 		return Comment{}, ErrorFetchingComment
 	}
 	return cmt, nil
+}
+
+func (s *Service) UpdateComment(ctx context.Context, cmt Comment) error {
+
+	return ErrNotImplemented
+}
+
+func (s *Service) CreateComment(ctx context.Context, cmt Comment) (Comment, error) {
+
+	return Comment{}, ErrNotImplemented
 }
