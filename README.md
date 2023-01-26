@@ -22,9 +22,6 @@ docker -v
 go run cmd/server/main.go
 
 
-https://www.fonction-publique.gouv.fr/chargeecharge-de-conception-et-developpement
-
-
 --------------------
 
 docker build -t go-rest-api .
