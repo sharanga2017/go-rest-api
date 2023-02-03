@@ -29,4 +29,5 @@ docker build -t go-rest-api .
 docker run go-rest-api
 
 
+
 docker-compose up
